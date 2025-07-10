@@ -1,0 +1,116 @@
+.header {
+    background-color: #F7FAFC; 
+    padding: 1em 2em;
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center; 
+    color: white;
+    box-shadow: 0 2px 5px rgba(77, 40, 40, 0.2);
+    border-radius: 8px;
+    position: sticky; 
+    top: 0;           
+    left: 0;          
+    z-index: 1000;    
+    border-radius: 0; 
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    color: #2c3e50;
+    font-size: 1.8em; 
+    font-weight: bold;
+    gap: 8px;
+    margin-right: auto;
+}
+
+.logoIcon {
+    height: 1.3em; 
+    margin-right: 8px;
+}
+
+.navbarNav {
+    display: flex;
+    gap: 30px; 
+    margin-right: 30px;
+}
+
+.navLink {
+    color: #2c3e50;
+    text-decoration: none; 
+    font-size: 1.1em;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.navLink:hover {
+    color: #007bff; 
+}
+
+.headerActions {
+    display: flex;
+    gap: 15px; 
+}
+
+.downloadButtonLink {
+    text-decoration: none; 
+}
+
+.downloadButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; 
+    background-color: #007bff; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    font-size: 1.05em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.downloadButton:hover {
+    background-color: #0056b3; 
+}
+
+.windowsIcon {
+    height: 1em; 
+    vertical-align: middle;
+}
+
+.loginButton {
+    background-color: #c9d3dd; 
+    padding: 8px 20px;
+    color: #2c3e50;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.05em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.loginButton:hover {
+    background-color: #b5c3d1;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 15px 15px;
+        border-radius: 0; /* На мобильных тоже убираем скругление */
+    }
+    .navbarNav {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+    .headerActions {
+        margin-top: 15px;
+    }
+    .navLink {
+        font-size: 1em;
+    }
+}

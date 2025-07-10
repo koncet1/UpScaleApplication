@@ -1,0 +1,83 @@
+.featuresSection {
+    padding: 5px 20px;
+    background-color: transparent; 
+    text-align: center;
+
+    max-width: 160vh;
+    margin: 40px auto; 
+    border-radius: 8px; 
+}
+
+.featuresHeader {
+    margin-bottom: 60px;
+}
+
+.featuresTitle {
+    font-size: 3.2em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.featuresSubtitle {
+    font-size: 1.5em;
+    color: #666;
+    max-width: 700px;
+    /*margin: 0 auto;*/
+    line-height: 1.6;
+    text-align: left;
+}
+
+.featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px; 
+}
+
+.featureItem {
+    background-color: transparent;
+    border: 0.1em solid #c9d3dd;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.featureItem:hover {
+    transform: translateY(-5px); 
+}
+
+.featureIconContainer {
+    margin-bottom: 20px;
+    color: #007bff; 
+}
+
+.featureIcon {
+    width: 60px; /* Размер иконки */
+    height: 60px;
+}
+
+.featureItemTitle {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.featureItemDescription {
+    font-size: 0.95em;
+    color: #777;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .featuresSection {
+        padding: 60px 15px;
+        margin: 20px auto;
+    }
+    .featuresTitle {
+        font-size: 2em;
+    }
+    .featuresGrid {
+        grid-template-columns: 1fr; 
+    }
+}

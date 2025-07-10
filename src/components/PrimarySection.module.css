@@ -1,0 +1,80 @@
+.hero {
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-color: #020202; 
+    position: relative; 
+    
+    height: 80vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    color: #333; 
+
+    max-width: 160vh; 
+    margin: 65px auto; 
+    border-radius: 8px; 
+    overflow: hidden;
+}
+
+.heroContent {
+    max-width: 800px; 
+    padding: 0 20px; 
+}
+
+.heroTitle {
+    font-size: 3.5em; 
+    margin-bottom: 20px;
+    color: #F7FAFC; 
+}
+
+.heroSubtitle {
+    font-size: 1.3em;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #F7FAFC;
+}
+
+.downloadButtonLink {
+    text-decoration: none;
+}
+
+.downloadButton {
+    background-color: #007bff; 
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.downloadButton:hover {
+    background-color: #0056b3;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+    }
+    .heroTitle {
+        font-size: 2.5em;
+    }
+    .heroSubtitle {
+        font-size: 1em;
+    }
+    .downloadButton {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .heroTitle {
+        font-size: 2em;
+    }
+}

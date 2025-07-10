@@ -1,0 +1,47 @@
+/* Footer.module.css */
+
+.footer {
+    background-color: transparent; /* Светло-серый фон, как на макете */
+    padding: 40px 20px; /* Отступы сверху/снизу и по бокам */
+    text-align: center; /* Центрируем содержимое */
+    color: #666; /* Серый цвет текста */
+    font-size: 0.95em;
+    margin-top: 180px; /* Отступ сверху от предыдущей секции */
+    border-top: 0.1em solid #c9d3dd; /* Легкая граница сверху для отделения */
+}
+
+.footerNav {
+    display: flex;
+    justify-content: center; /* Центрируем ссылки */
+    gap: 250px; /* Отступ между ссылками */
+    margin-bottom: 50px; /* Отступ между навигацией и копирайтом */
+    flex-wrap: wrap; /* Позволяет ссылкам переноситься на новую строку на маленьких экранах */
+}
+
+.footerLink {
+    color: #666;
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: color 0.3s ease;
+}
+
+.footerLink:hover {
+    color: #007bff; /* Цвет при наведении */
+}
+
+.copyright {
+    margin: 0; /* Убираем стандартные маржины у параграфа */
+    color: #888; /* Более светлый серый для копирайта */
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 15px;
+        margin-top: 40px;
+    }
+    .footerNav {
+        flex-direction: column; /* Ссылки в столбец на мобильных */
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+}

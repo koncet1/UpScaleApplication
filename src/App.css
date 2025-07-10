@@ -1,0 +1,26 @@
+html {
+    scroll-behavior: smooth; 
+}
+
+#root {
+  max-width: 100%;
+  text-align: center;
+}
+
+.buttonDownload {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 15px;
+}
+
+.windowsLogo {
+  height: 3em;
+}
+
+.card {
+  padding: 2em;
+}
+
+

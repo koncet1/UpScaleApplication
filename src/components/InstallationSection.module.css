@@ -1,0 +1,127 @@
+.installationGuide {
+    padding: 5px 20px; 
+    background-color: transparent; 
+    max-width: 160vh;  
+    margin: 100px auto; 
+}
+
+.introHeader {
+    margin-bottom: 60px;
+    text-align: end;
+}
+
+.introTitle {
+    font-size: 3.2em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    margin-top: 0; /* Убираем стандартный верхний отступ */
+}
+
+.introSubtitle {
+    font-size: 1.5em;
+    color: #666;
+    /*margin: 0 auto;*/
+    line-height: 1.6;
+}
+
+.contentWrapper {
+    display: flex; 
+    align-items: center; 
+    gap: 40px; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+
+    padding: 20px 20px; /* Внутренние отступы для этого конкретного блока */
+    background-color: transparent;  /* Легкий фон, чтобы этот блок выделялся */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+
+    border-radius: 8px; 
+    border: 0.1em solid #c9d3dd;
+
+
+}
+
+.textContainer {
+    flex: 1; 
+    min-width: 300px; 
+    text-align: left; 
+}
+
+.title {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: -15px;
+    margin-top: 0;
+}
+
+.description {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.downloadButtonLink {
+    text-decoration: none;
+    display: inline-block; 
+}
+
+.downloadButton {
+    background-color: #c9d3dd; 
+    color: #2c3e50; 
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.downloadButton:hover {
+    background-color: #b5c3d1;
+}
+
+.imageContainer {
+    flex-shrink: 0; 
+    width: 350px; 
+    height: 200px; 
+    background-color: #2c98b3; 
+    border-radius: 8px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.windowsImage {
+    width: 100%;  
+    height: 100%; 
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .installationGuide {
+        padding: 40px 15px;
+        margin: 20px auto;
+    }
+    .contentWrapper {
+        flex-direction: column; 
+        text-align: center; 
+    }
+    .textContainer {
+        min-width: auto; 
+    }
+    .title {
+        font-size: 2em;
+    }
+    .description {
+        font-size: 1em;
+    }
+    .imageContainer {
+        width: 100%; 
+        height: 180px; 
+    }
+}
