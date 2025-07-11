@@ -24,14 +24,14 @@ function FeaturesSection() {
     ];
 
     return (
-        <section className={styles.featuresSection} id='future-section'>
+        <section className={styles.featuresSection}>
             <div className={styles.featuresHeader}>
                 <h2 className={styles.featuresTitle}>Key Features</h2>
                 <p className={styles.featuresSubtitle}>
                     Explore the powerful capabilities of UpscalePro that make it the ultimate solution for enhancing your visual content
                 </p>
             </div>
-            <div className={styles.featuresGrid}>
+            <div className={styles.featuresGrid} id='future-section'>
                 {features.map((feature, index) => (
                     <div key={index} className={styles.featureItem}>
                         <div className={styles.featureIconContainer}>

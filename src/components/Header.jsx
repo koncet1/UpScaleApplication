@@ -1,8 +1,10 @@
 import React from "react";
 import styles from './Header.module.css';
 import Logo from '../assets/Logo.jpg';
+import scrollToSection from '../scripts/ScrollSection.js'
 
 function Header() {
+
     return (
         <header className={styles.header}>
             <div className={styles.logoContainer}>
@@ -16,7 +18,7 @@ function Header() {
             </nav>
 
             <div className={styles.headerActions}>
-                <a href="#installation-section" className={styles.downloadButtonLink}>
+                <a href="#installation-section" className={styles.downloadButtonLink} onClick={(e) => scrollToSection(e, 'installation-section')}>
                     <button className={styles.downloadButton}>
                         Download
                         {/*<img src={windowsLogo} alt="Windows Logo" className={styles.windowsIcon} />*/}
